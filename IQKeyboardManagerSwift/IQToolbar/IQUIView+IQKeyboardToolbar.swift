@@ -296,16 +296,6 @@ public extension UIView {
             self.keyboardToolbar.titleBarButton.title = self.drawingToolbarPlaceholder
         }
     }
-
-    @available(*,deprecated, message: "This is renamed to `toolbarPlaceholder` for more clear naming.")
-    @objc public var placeholderText: String? {
-        get {
-            return toolbarPlaceholder
-        }
-        set(newValue) {
-            toolbarPlaceholder = newValue
-        }
-    }
     
     /**
      `drawingToolbarPlaceholder` will be actual text used to draw on toolbar. This would either `placeholder` or `toolbarPlaceholder`.
